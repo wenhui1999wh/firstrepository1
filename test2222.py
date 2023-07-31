@@ -50,6 +50,11 @@ Munch方法，可以改变字典的访问方式
 # import time
 # timestamp = int(time.time() * 1000)
 # print(timestamp)
-
-
+"""
+is 和 ==的区别
+"""
+a = 555
+b = 555
+print(a == b)
+print(a is b)
 
