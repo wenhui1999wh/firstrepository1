@@ -1,6 +1,7 @@
 """
 Munch方法，可以改变字典的访问方式
 """
+import base64
 
 # from munch impot Munch
 # dict1=Munch({'a': 1, 'b': 2, 'c': {'1': 3, '2': 4}, 'd': {'5': {'2': 5, '3': 6}, '4': {'1': 7}}})
@@ -53,8 +54,37 @@ Munch方法，可以改变字典的访问方式
 """
 is 和 ==的区别
 """
-a = 555
-b = 555
-print(a == b)
-print(a is b)
+# a = 555
+# b = 555
+# print(a == b)
+# print(a is b)
+"""
+base64.encodebytes(s) 方法的使用。可以使用base64编码的数据将字符串编码为二进制形式
+"""
+# import base64
+# s = b'hello world!'
+# s1 = base64.encodebytes(s)
+# print(s1)
+"""
+字典的删除、修改、添加
+"""
+# scores = {
+#       '林黛玉': 95,
+#       '薛宝钗': 93,
+#       '贾宝玉': 78,
+# }
+#
+# scores['林黛玉'] = 90
+# print(scores)
+# # 输出：{'林黛玉': 90, '薛宝钗': 93, '贾宝玉': 78}
+#
+# # 添加
+# scores['袭人'] = 85
+# print(scores)
+# # 输出：{'林黛玉': 90, '薛宝钗': 93, '贾宝玉': 78, '袭人': 85}
+#
+# # 删除
+# del scores['林黛玉']
+# print(scores)
+# # 输出：{'薛宝钗': 93, '贾宝玉': 78, '袭人': 85}
 
