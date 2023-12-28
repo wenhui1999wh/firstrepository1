@@ -88,3 +88,16 @@ base64.encodebytes(s) 方法的使用。可以使用base64编码的数据将字�
 # print(scores)
 # # 输出：{'薛宝钗': 93, '贾宝玉': 78, '袭人': 85}
 
+# 列表中相同的元素以及它们的下标
+# def find_same_elements(lst):
+#     result = {}
+#     for index, element in enumerate(lst):
+#         if element in result:
+#             result[element].append(index)
+#         else:
+#             result[element] = [index]
+#     return {key: value for key, value in result.items() if len(value) > 1}
+#
+# lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5]
+# same_elements = find_same_elements(lst)
+# print(same_elements)
